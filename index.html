@@ -53,8 +53,8 @@ data-theme="light">
                                 <i class="fa-regular fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                            <h4 class="text-1xl font-extrabold">K. Accessories</h2>
-                            <p>39.00 Tk</p>
+                            <h4 class="text-1xl font-extrabold">K. Accessories</h4>
+                            <span>39.00 Tk</span>
                         </div>
                     </div>
                     <div class=" card w-96 bg-base-100 shadow-xl">
@@ -69,8 +69,8 @@ data-theme="light">
                                 <i class="fa-regular fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                            <h4 class="text-1xl font-extrabold">K. Accessories</h2>
-                            <p>25.00 Tk</p>
+                            <h4 class="text-1xl font-extrabold">K. Accessories</h4>
+                            <span>25.00 Tk</span>
                         </div>
                     </div>
                     <div class=" card w-96 bg-base-100 shadow-xl">
@@ -85,8 +85,8 @@ data-theme="light">
                                 <i class="fa-regular fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                            <h4 class="text-1xl font-extrabold">Home Cooker</h2>
-                            <p>49.00 Tk</p>
+                            <h4 class="text-1xl font-extrabold">Home Cooker</h4>
+                            <span>49.00 Tk</span>
                         </div>
                     </div>
                 </div>
@@ -106,8 +106,8 @@ data-theme="light">
                                 <i class="fa-regular fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                            <h4 class="text-1xl font-extrabold">Sports Back Cap</h2>
-                            <p>49.00 Tk</p>
+                            <h4 class="text-1xl font-extrabold">Sports Back Cap</h4>
+                            <span>49.00 Tk</span>
                         </div>
                     </div>
                     <div class=" card w-96 bg-base-100 shadow-xl">
@@ -122,8 +122,8 @@ data-theme="light">
                                 <i class="fa-regular fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                            <h4 class="text-1xl font-extrabold">Full Jersey Set</h2>
-                            <p>69.00 Tk</p>
+                            <h4 class="text-1xl font-extrabold">Full Jersey Set</h4>
+                            <span>69.00 Tk</span>
                         </div>
                     </div>
                     <div class=" card w-96 bg-base-100 shadow-xl">
@@ -138,8 +138,8 @@ data-theme="light">
                                 <i class="fa-regular fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                            <h4 class="text-1xl font-extrabold">Sports cates</h2>
-                            <p>159.00 Tk</p>
+                            <h4 class="text-1xl font-extrabold">Sports cates</h4>
+                            <span>159.00 Tk</span>
                         </div>
                     </div>
                 </div>
@@ -159,8 +159,8 @@ data-theme="light">
                                 <i class="fa-regular fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                            <h4 class="text-1xl font-extrabold">Single Relax Chair</h2>
-                            <p>185.00 Tk</p>
+                            <h4 class="text-1xl font-extrabold">Single Relax Chair</h4>
+                            <span>185.00 Tk</span>
                         </div>
                     </div>
                     <div class=" card w-96 bg-base-100 shadow-xl">
@@ -175,8 +175,8 @@ data-theme="light">
                                 <i class="fa-regular fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                            <h4 class="text-1xl font-extrabold">Children play</h2>
-                            <p>299.00 Tk</p>
+                            <h4 class="text-1xl font-extrabold">Children play</h4>
+                            <span>299.00 Tk</span>
                         </div>
                     </div>
                     <div class=" card w-96 bg-base-100 shadow-xl">
@@ -191,8 +191,8 @@ data-theme="light">
                                 <i class="fa-regular fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                            <h4 class="text-1xl font-extrabold">Flexible Sofa</h2>
-                            <p>339.00 Tk</p>
+                            <h4 class="text-1xl font-extrabold">Flexible Sofa</h4>
+                            <span>339.00 Tk</span>
                         </div>
                     </div>
                 </div>
@@ -201,18 +201,25 @@ data-theme="light">
             <div class="w-80 text-center items-center ml-6 space-y-6 mt-12">
                 <div class="bg-gray-200 p-6 rounded-xl space-y-4">
                     <h2 class=" font-semibold text-2xl">Have Coupon?</h2>
-                    <input class="outline h-10 rounded-md" type="text" placeholder="Coupon Code">
-                    <button class="btn">Apply</button>
+                    <input id="input-tag" class="outline h-10 rounded-md" type="text" placeholder="Coupon Code">
+                    <button id="apply-btn" class="btn">Apply</button>
                 </div>
                 <div class="text-left bg-gray-300 p-4 rounded-2xl">
-                    <p class="font-semibold text-1xl">Total Price:</p>
-                    <p class="font-semibold text-1xl">Discount:</p>
-                    <p class="font-semibold text-1xl">Total:</p>
+                       <div id="title-container" class="font-semibold text-1xl">
+
+                       </div>
+                       <p>--------------------------------</p>
+                    <div>
+                        <p class="font-semibold text-1xl">Total Price: <span id="total-Price" ></span> </p>
+                    <p class="font-semibold text-1xl">Discount: <span id="discount-price"></span></p>
+                    <p class="font-semibold text-1xl">Total: <span id="total"></span></p>
+                    </div>
                     
                 </div>
                 <button class="btn w-full">Make Purchase</button>
             </div>
         </div>
+        <script src="./scripts/script.js"></script>
     </main>
     <footer>
 
